@@ -92,11 +92,6 @@ const PesoIdealPage = (): JSX.Element => {
     const { name } = e.currentTarget
     if (name === 'cm' || name === 'metro') {
       setTipoAltura(name)
-      if (name === 'cm') {
-        setCampos({ ...campos, altura: campos.altura * 100 })
-      } else {
-        setCampos({ ...campos, altura: campos.altura / 100 })
-      }
     }
     if (name === 'hombre' || name === 'mujer') {
       setGenero(name)
