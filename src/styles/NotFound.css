@@ -1,0 +1,17 @@
+.notFound {
+  text-align: center;
+  padding: 30px;
+}
+.notFound h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.notFound p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.notFound a {
+  max-width: 200px;
+  margin: 0 auto;
+}

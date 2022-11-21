@@ -1,0 +1,192 @@
+/*=============== resultado ===============*/
+.resultado {
+  padding: 30px 20px;
+  margin-top: 20px;
+  border-top: var(--border);
+  opacity: 0;
+  animation: oparecer-resultado 0.5s ease-in-out forwards;
+}
+@keyframes oparecer-resultado {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.resultado .titulo {
+  margin-bottom: 40px;
+}
+.resultado__grafico {
+  overflow: auto;
+  padding-bottom: 50px;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+.resultado__linear {
+  padding-top: 120px;
+  position: relative;
+  display: flex;
+  text-align: center;
+  width: 100%;
+}
+.resultado__indice {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: fit-content;
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 10px;
+  color: #fff;
+  background: var(--c-amarillo);
+  transition: all 0.3s ease-in-out;
+}
+.resultado__indice.bajo {
+  background: var(--c-amarillo);
+  left: 40px;
+}
+.resultado__indice.bajo span {
+  background: var(--c-amarillo);
+}
+.resultado__indice.normal {
+  background: var(--c-verde);
+  left: 290px;
+}
+.resultado__indice.normal span {
+  background: var(--c-verde);
+}
+.resultado__indice.sobre-peso {
+  background: var(--c-naranja);
+  left: 510px;
+}
+.resultado__indice.sobre-peso span {
+  background: var(--c-naranja);
+}
+.resultado__indice.obesidad {
+  background: var(--c-brown);
+  left: 760px;
+}
+.resultado__indice.obesidad span {
+  background: var(--c-brown);
+}
+.resultado__indice.obesidad-morbida {
+  background: var(--c-rojo);
+  left: 1000px;
+}
+.resultado__indice.obesidad-morbida span {
+  background: var(--c-rojo);
+}
+.resultado__indice h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+.resultado__indice p {
+  font-size: 14px;
+  font-weight: 500;
+}
+.resultado__indice span {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: transparent;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: rotate(45deg) translateX(-50%);
+  transition: var(--transition-3s);
+}
+.resultado__linear div {
+  width: 240px;
+  min-width: 240px;
+  padding-bottom: 10px;
+  position: relative;
+}
+.resultado__linear div:nth-last-child(5) {
+  border-bottom: 10px solid var(--c-amarillo);
+}
+.resultado__linear div:nth-last-child(4) {
+  border-bottom: 10px solid var(--c-verde);
+}
+.resultado__linear div:nth-last-child(3) {
+  border-bottom: 10px solid var(--c-naranja);
+}
+.resultado__linear div:nth-last-child(2) {
+  border-bottom: 10px solid var(--c-brown);
+}
+.resultado__linear div:nth-last-child(1) {
+  border-bottom: 10px solid var(--c-rojo);
+}
+.resultado__linear div h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--c-gray);
+}
+.resultado__linear div p {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--c-blue-grey);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  transform: translateX(-15px);
+}
+.resultado__linear div p.one {
+  transform: translate(0);
+  width: 95%;
+}
+
+.resultado__linear div p:last-child {
+  width: 105%;
+}
+.resultado__linear div .resultado-bottom {
+  position: absolute;
+  right: -25px;
+  bottom: -40px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--c-gray);
+}
+.resultado__dotted {
+  display: block;
+  border: 1px dashed var(--black);
+  opacity: 0.2;
+  height: 0;
+  width: 80%;
+  margin: 0 auto;
+}
+.resultado__informacion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  -webkit-column-gap: 20px;
+  row-gap: 20px;
+  background-color: var(--c-informacion);
+  border-radius: 12px;
+  padding: 20px;
+}
+.resultado__informacion div {
+  flex: auto;
+  text-align: center;
+}
+.resultado__informacion div h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--c-gray-hover);
+  margin-bottom: 5px;
+}
+.resultado__informacion div p {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--c-blue-grey);
+}
